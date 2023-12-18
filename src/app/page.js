@@ -130,8 +130,12 @@ export default function Home() {
                   </CardContent>
                 </div>
                 <cardFooter>
-                  <Badge className="bg-slate-300 mr-2 hover:bg-slate-400">mobile app</Badge>
-                  <Badge className="bg-slate-300 hover:bg-slate-400">branding</Badge>
+                  <Badge className="bg-slate-300 mr-2 hover:bg-slate-400">
+                    mobile app
+                  </Badge>
+                  <Badge className="bg-slate-300 hover:bg-slate-400">
+                    branding
+                  </Badge>
                 </cardFooter>
               </Card>
             </div>
@@ -227,30 +231,44 @@ export default function Home() {
               <div>
                 <Card className="bg-slate-800 border-none flex items-center justify-between px-4 py-6 mt-4 rounded-2xl">
                   <div className="flex items-center gap-5">
-                  <SmileIcon />
-                  <div>
-                    <CardTitle className="p-0 text-white pb-2 text-lg">Engage with Clients</CardTitle>
-                    <CardDescription className="text-gray-400">Join slack channel</CardDescription>
+                    <SmileIcon />
+                    <div>
+                      <CardTitle className="p-0 text-white pb-2 text-lg">
+                        Engage with Clients
+                      </CardTitle>
+                      <CardDescription className="text-gray-400">
+                        Join slack channel
+                      </CardDescription>
+                    </div>
                   </div>
-                  </div>
-                  <Button className="bg-indigo-500 rounded-xl hover:bg-indigo-400">Join now</Button>
+                  <Button className="bg-indigo-500 rounded-xl hover:bg-indigo-400">
+                    Join now
+                  </Button>
                 </Card>
               </div>
             </div>
             <div className="">
-              <h1 className="text-black text-lg mb-4 font-medium">Recommended Project</h1>
+              <h1 className="text-black text-lg mb-4 font-medium">
+                Recommended Project
+              </h1>
               <Card className="flex items-center p-5 bg-white border-none justify-between shadow rounded-t-3xl">
                 <div className="flex items-center gap-4">
-                <Avatar className="w-12 h-12">
-                  <AvatarImage src="https://github.com/shadcn.png" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                <div>
-                  <CardTitle className="p-0 text-black text-md pb-2">Thomas Marting</CardTitle>
-                  <CardDescription className="text-gray-400 text-xs">Updated 10 mins ago</CardDescription>
+                  <Avatar className="w-12 h-12">
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <CardTitle className="p-0 text-black text-md pb-2">
+                      Thomas Marting
+                    </CardTitle>
+                    <CardDescription className="text-gray-400 text-xs">
+                      Updated 10 mins ago
+                    </CardDescription>
+                  </div>
                 </div>
-                </div>
-                <Badge className="bg-indigo-500 hover:bg-indigo-500 py-2 px-3">Design</Badge>
+                <Badge className="bg-indigo-500 hover:bg-indigo-500 py-2 px-3">
+                  Design
+                </Badge>
               </Card>
               <Card className="p-5 border-none bg-white shadow rounded-b-3xl">
                 <CardTitle className="text-black text-md pb-2">
@@ -262,9 +280,12 @@ export default function Home() {
                 </CardDescription>
                 <CardFooter className="bg-gray-100 p-3 flex items-center justify-between rounded-xl">
                   <p className="text-black">
-                    <span className="text-gray-400">$</span>8,700<span className="text-gray-400">/month</span>
+                    <span className="text-gray-400">$</span>8,700
+                    <span className="text-gray-400">/month</span>
                   </p>
-                  <Badge className="border-indigo-600 text-indigo-600 px-3">Full time</Badge>
+                  <Badge className="border-indigo-600 text-indigo-600 px-3">
+                    Full time
+                  </Badge>
                 </CardFooter>
               </Card>
             </div>
@@ -272,132 +293,6 @@ export default function Home() {
         </main>
       </div>
     </div>
-  );
-}
-
-function BellIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
-      <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
-    </svg>
-  );
-}
-
-function DeleteIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 5H9l-7 7 7 7h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z" />
-      <line x1="18" x2="12" y1="9" y2="15" />
-      <line x1="12" x2="18" y1="9" y2="15" />
-    </svg>
-  );
-}
-
-function DoorOpenIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M13 4h3a2 2 0 0 1 2 2v14" />
-      <path d="M2 20h3" />
-      <path d="M13 20h9" />
-      <path d="M10 12v.01" />
-      <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" />
-    </svg>
-  );
-}
-
-function DotIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12.1" cy="12.1" r="1" />
-    </svg>
-  );
-}
-
-function FileEditIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5" />
-      <polyline points="14 2 14 8 20 8" />
-      <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z" />
-    </svg>
-  );
-}
-
-function FrownIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
-      <line x1="9" x2="9.01" y1="9" y2="9" />
-      <line x1="15" x2="15.01" y1="9" y2="9" />
-    </svg>
   );
 }
 
@@ -462,47 +357,6 @@ function LineChartIcon(props) {
   );
 }
 
-function Package2Icon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
-      <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
-      <path d="M12 3v6" />
-    </svg>
-  );
-}
-
-function PlusIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5 12h14" />
-      <path d="M12 5v14" />
-    </svg>
-  );
-}
-
 function SearchIcon(props) {
   return (
     <svg
@@ -519,26 +373,6 @@ function SearchIcon(props) {
     >
       <circle cx="11" cy="11" r="8" />
       <path d="m21 21-4.3-4.3" />
-    </svg>
-  );
-}
-
-function SendIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m22 2-7 20-4-9-9-4Z" />
-      <path d="M22 2 11 13" />
     </svg>
   );
 }
